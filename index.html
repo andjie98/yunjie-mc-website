@@ -55,10 +55,32 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: 
-                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                repeating-linear-gradient(45deg, #1a472a 0, #1a472a 10px, #2d5f3f 10px, #2d5f3f 20px),
-                linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            /* MC 像素方块背景 */
+            background-color: #1a1a2e;
+            background-image: 
+                /* 遮罩层 */
+                linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                /* 像素方块网格 */
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 39px,
+                    rgba(139, 195, 74, 0.3) 39px,
+                    rgba(139, 195, 74, 0.3) 40px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 39px,
+                    rgba(139, 195, 74, 0.3) 39px,
+                    rgba(139, 195, 74, 0.3) 40px
+                ),
+                /* 草方块颜色 */
+                linear-gradient(135deg, 
+                    #2d5f3f 0%, #3d7c4f 25%, 
+                    #4a8c5f 50%, #3d7c4f 75%, 
+                    #2d5f3f 100%);
+            background-size: 100% 100%, 40px 40px, 40px 40px, 100% 100%;
             position: relative;
         }
 
