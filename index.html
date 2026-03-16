@@ -55,7 +55,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: url('https://images.unsplash.com/photo-1607988795691-3d0147b43231?w=1920') no-repeat center center/cover;
+            background: url('https://images4.alphacoders.com/939/939123.png') no-repeat center center/cover;
             position: relative;
         }
 
@@ -233,6 +233,10 @@
                 play.yunjie.mc
                 <div class="copy-hint">点击复制服务器地址</div>
             </div>
+            <div class="server-ip" style="margin-top: 1rem; border-color: #12b7f5; background: rgba(18, 183, 245, 0.2);" onclick="copyQQ()">
+                👑 QQ 群：106208623
+                <div class="copy-hint">点击复制群号</div>
+            </div>
         </div>
     </section>
 
@@ -290,7 +294,7 @@
                 </div>
                 <div class="info-item">
                     <h3>QQ 群</h3>
-                    <p>待定</p>
+                    <p>106208623</p>
                 </div>
                 <div class="info-item">
                     <h3>开服时间</h3>
@@ -331,6 +335,14 @@
                 alert('服务器地址已复制！快加入我们一起玩吧~');
             }).catch(() => {
                 alert('复制失败，请手动复制：play.yunjie.mc');
+            });
+        }
+
+        function copyQQ() {
+            navigator.clipboard.writeText('106208623').then(() => {
+                alert('QQ 群号已复制！快来加入大家庭~');
+            }).catch(() => {
+                alert('复制失败，请手动复制：106208623');
             });
         }
 
