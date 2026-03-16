@@ -229,12 +229,8 @@
         <div class="hero-content">
             <h1>🌥️ 云界</h1>
             <p>你的 Minecraft 家园 | 插件服 | 红石 | 领地</p>
-            <div class="server-ip" onclick="copyIP()">
-                play.yunjie.mc
-                <div class="copy-hint">点击复制服务器地址</div>
-            </div>
-            <div class="server-ip" style="margin-top: 1rem; border-color: #12b7f5; background: rgba(18, 183, 245, 0.2);" onclick="copyQQ()">
-                👑 QQ 群：106208623
+            <div class="server-ip" style="border-color: #12b7f5; background: rgba(18, 183, 245, 0.2);" onclick="copyQQ()">
+                👑 加群获取服务器地址：106208623
                 <div class="copy-hint">点击复制群号</div>
             </div>
         </div>
@@ -290,7 +286,7 @@
                 </div>
                 <div class="info-item">
                     <h3>服务器地址</h3>
-                    <p>play.yunjie.mc</p>
+                    <p>加群获取</p>
                 </div>
                 <div class="info-item">
                     <h3>QQ 群</h3>
@@ -330,17 +326,9 @@
     </footer>
 
     <script>
-        function copyIP() {
-            navigator.clipboard.writeText('play.yunjie.mc').then(() => {
-                alert('服务器地址已复制！快加入我们一起玩吧~');
-            }).catch(() => {
-                alert('复制失败，请手动复制：play.yunjie.mc');
-            });
-        }
-
         function copyQQ() {
             navigator.clipboard.writeText('106208623').then(() => {
-                alert('QQ 群号已复制！快来加入大家庭~');
+                alert('QQ 群号已复制！\n服务器地址请在群公告查看~');
             }).catch(() => {
                 alert('复制失败，请手动复制：106208623');
             });
